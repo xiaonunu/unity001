@@ -17,6 +17,6 @@ public class MyTest : MonoBehaviour {
 	//shoot a bullet
 	public void shoot_bullet(){
 		GameObject bullet=	(GameObject)(Instantiate(bullet_prefab,temp_object.transform.position,Quaternion.identity));
-		bullet.rigidbody.AddForce(8000,2500,0);
+		bullet.rigidbody.AddForce(200,50,0);
 	}
 }
