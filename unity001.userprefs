@@ -1,9 +1,10 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/MyTestFolder/scripts/MyTest.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/MyTestFolder/scripts/Bullet.cs">
     <Files>
-      <File FileName="Assets/MyTestFolder/scripts/Bullet.cs" Line="18" Column="23" />
-      <File FileName="Assets/MyTestFolder/scripts/MyTest.cs" Line="23" Column="1" />
+      <File FileName="Assets/MyTestFolder/scripts/ParticelsLogic.cs" Line="10" Column="3" />
+      <File FileName="Assets/MyTestFolder/scripts/ShootLogic.cs" Line="51" Column="9" />
+      <File FileName="Assets/MyTestFolder/scripts/Bullet.cs" Line="17" Column="44" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
