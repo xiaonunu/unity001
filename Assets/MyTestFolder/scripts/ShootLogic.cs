@@ -46,9 +46,9 @@ public class ShootLogic : MonoBehaviour
 	void createRay ()
 	{
 		ray = Camera.main.ScreenPointToRay (Input.mousePosition);
-		if (Physics.Raycast (ray, out hit, 50)) {
+		if (Physics.Raycast (ray, out hit, 500)) {
 			press_vector= hit.point;
-			//print(shoot_object.transform.position+"@@"+hit.point);
+			print(shoot_object.transform.position+"~~~~~~~~~~"+hit.point);
 		}
 	}
 	
@@ -57,9 +57,13 @@ public class ShootLogic : MonoBehaviour
 		GameObject bullet=	(GameObject)(Instantiate(bullet_prefab,shoot_vector,Quaternion.identity));
 		float power_x,power_y;
 		Vector3 temp_vector=press_vector-shoot_vector;
-		power_x=power_value*temp_vector.x*power_max/Mathf.Sqrt(Mathf.Pow(temp_vector.x,2)+Mathf.Pow(temp_vector.y,2));
-		power_y=power_value*temp_vector.y*power_max/Mathf.Sqrt(Mathf.Pow(temp_vector.x,2)+Mathf.Pow(temp_vector.y,2));
+		float long_value=Mathf.Sqrt(Mathf.Pow(temp_vector.x,2)+Mathf.Pow(temp_vector.y,2));
+		power_x=power_value*temp_vector.x*power_max/long_value;
+		power_y=power_value*temp_vector.y*power_max/long_value;
 		print(power_x+"###"+power_y+"##"+temp_vector);
+	//	float angle=Vector3.Angle(temp_vector,Vector3.right);
+	//	power_x=Mathf.Cos(angle)*power_value*power_max;
+	//	power_y=Mathf.Sin(angle)*power_value*power_max;
 		bullet.rigidbody.AddForce(power_x,power_y,0);
 	}
 }
