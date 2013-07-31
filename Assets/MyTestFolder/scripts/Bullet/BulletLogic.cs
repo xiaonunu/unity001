@@ -1,19 +1,15 @@
 using UnityEngine;
 using System.Collections;
 
-public class Bullet : MonoBehaviour
+public class BulletLogic : MonoBehaviour
 {
 	
 	private Transform myTransform;
 	public GameObject sparkObject;
 	private int radius;
 	private int attackValue;
-	private int maxHp;
-	private int currentHp;
 	private float radiusUp;
 	private float attackUp;
-	private float maxHpUp;
-	private float bulletNumsUp;
 	// Use this for initialization
 	void Start ()
 	{
@@ -21,14 +17,11 @@ public class Bullet : MonoBehaviour
 		Invoke ("DestroyNow", 10);
 	}
 	
-	public void setValue(Tanke.TankeType type,int index){
-		radius=TankeData.getRadius(type);
-		attackValue=TankeData.getAttack(type);
-		maxHp=TankeData.getMaxHp(type);
-		radiusUp=TankeData.getRadiusUp(type);
-		attackUp=TankeData.getAttackUp(type);
-		maxHpUp=TankeData.getMaxHpUp(type);
-		bulletNumsUp=TankeData.getBulletNumsUp(type);
+	public void setValue(int id,int tank_lv){
+		radius=BulletData.getRadius(id);
+		attackValue=BulletData.getAttack(id);
+		radiusUp=BulletData.getRadiusUp(id);
+		attackUp=BulletData.getAttackUp(id);
 	}
 	//enter a collisider
 	void OnCollisionEnter (Collision collision)

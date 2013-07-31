@@ -1,11 +1,12 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/MyTestFolder/scripts/Bullet.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/MyTestFolder/scripts/Player.cs">
     <Files>
-      <File FileName="Assets/MyTestFolder/scripts/PrefabList.cs" Line="16" Column="4" />
-      <File FileName="Assets/MyTestFolder/scripts/Tanke.cs" Line="23" Column="3" />
-      <File FileName="Assets/MyTestFolder/scripts/ShootLogic.cs" Line="66" Column="1" />
-      <File FileName="Assets/MyTestFolder/scripts/Bullet.cs" Line="44" Column="1" />
+      <File FileName="Assets/MyTestFolder/scripts/Tanke/TankeMode.cs" Line="16" Column="29" />
+      <File FileName="Assets/MyTestFolder/scripts/Player.cs" Line="8" Column="1" />
+      <File FileName="Assets/MyTestFolder/scripts/Tanke/TankeData.cs" Line="12" Column="50" />
+      <File FileName="Assets/MyTestFolder/scripts/Tanke/TankeLogic.cs" Line="6" Column="25" />
+      <File FileName="Assets/MyTestFolder/scripts/LevelLogic.cs" Line="11" Column="10" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

@@ -60,6 +60,6 @@ public class ShootLogic : MonoBehaviour
 		power_y=power_value*temp_vector.y*power_max/long_value;
 		//bullet.rigidbody.AddForce(power_x,power_y,0);
 		Vector3 v=new Vector3(power_x,power_y,0);
-		shoot_object.GetComponent<Tanke>().shooting(shoot_vector,v);
+		shoot_object.GetComponent<TankeLogic>().shooting(shoot_vector,v);
 	}
 }
